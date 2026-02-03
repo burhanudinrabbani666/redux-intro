@@ -15,3 +15,5 @@ Historically, Redux was used in most React apps for all global state. Today, tha
 1. Redux can be hard to learn, and this course teaches it well 😅
 2. You will encounter Redux code in your job, so you should understand it
 3. Some apps do require Redux (or a similar library)
+
+[Next: Creating reducer bank account](./02-creating-reducer-bank-account.md)

@@ -1,6 +1,3 @@
-# Creating reducer: Bank account
-
-```js
 const initialState = {
   balance: 0,
   loan: 0,
@@ -33,6 +30,3 @@ function reducer(state = initialState, action) {
       return state; // recommendation from redux
   }
 }
-```
-
-[Next: Creating redux store](./03-creating-redux-store.md)
