@@ -24,7 +24,7 @@ function AccountOperations() {
       dispatch(deposit(depositAmount, currency));
 
       setDepositAmount("");
-      setCurrency("");
+      setCurrency("USD");
     } catch (error) {
       console.log(error.message);
     }
