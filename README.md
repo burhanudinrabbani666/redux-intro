@@ -22,7 +22,11 @@ By working through this material, I aim to:
 
 ## What I've Learned
 
-Documentation coming soon as I progress through the course.
+- Using basic Redux in old way and Modern Way
+- Using REDUX DevTools
+- Data flow with REDUX
+- Debugging
+- use `prepare`
 
 ## Future Reference
 
