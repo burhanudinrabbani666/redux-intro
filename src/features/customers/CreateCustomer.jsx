@@ -1,10 +1,25 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { createCustomer } from "./customerSlice";
 
 function Customer() {
   const [fullName, setFullName] = useState("");
   const [nationalId, setNationalId] = useState("");
 
-  function handleClick() {}
+  const dispatch = useDispatch();
+
+  function handleClick() {
+    try {
+      if (!fullName && !nationalId)
+        throw new Error("Insert Your full name and National ID");
+      if (!fullName) throw new Error("Account must be have full Name");
+      if (!nationalId) throw new Error("Account must be have National ID");
+
+      dispatch(createCustomer(fullName, nationalId));
+    } catch (error) {
+      alert(error.message);
+    }
+  }
 
   return (
     <div>
